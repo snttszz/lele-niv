@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ffe0ec, #fff);
+    overflow-x: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  h1 {
+    color: #d63384;
+    font-size: 2em;
+  }
+  
+  p {
+    color: #444;
+    font-size: 1em;
+  }
+  
+  input[type="date"] {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff4da6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e60073;
+  }
+  
+  #erro {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .conteudo {
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+  }
+  
+  canvas#baloes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .mensagem {
+    background-color: rgba(255, 192, 203, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+  }
+  
+  .mensagem h2 {
+    color: #d63384;
+    font-size: 2em;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .galeria img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    h1, .mensagem h2 {
+      font-size: 1.5em;
+    }
+  
+    input[type="date"], button {
+      width: 90%;
+      font-size: 1em;
+    }
+  
+    .galeria {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .galeria img {
+      width: 90vw;
+      height: auto;
+      max-height: 400px;
+    }
+  }
+  
